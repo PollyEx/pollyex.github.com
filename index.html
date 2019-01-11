@@ -61,10 +61,13 @@
 				</div>
 			</div>
 
-			<form class="w-full flex-w flex-c-m validate-form">
+			<form class="w-full flex-w flex-c-m validate-form" action="https://formspree.io/hello@pollyex.com" method="POST">
 
 				<div class="wrap-input100 validate-input where1" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input100 placeholder0 s2-txt2" type="text" name="email" placeholder="Enter Email Address">
+					<input type="hidden" name="_subject" value="Contact from the website" />
+					<input type="hidden" name="_next" value="https://www.pollyex.com?return"/>
+					<input type="text" name="_gotcha" style="display:none" />
+					<input class="input100 placeholder0 s2-txt2" type="text" name="_replyto" placeholder="Enter Email Address">
 					<span class="focus-input100"></span>
 				</div>
 				
